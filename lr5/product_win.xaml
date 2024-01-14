@@ -1,0 +1,18 @@
+﻿<Window x:Class="lr5.product_win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lr5"
+        mc:Ignorable="d"
+        Title="Изделия" Icon="/party-popper_1f389.png"
+        Height="320" Width="510"  ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DataGrid x:Name="dg" d:ItemsSource="{d:SampleData ItemCount=5}" Height="249" VerticalAlignment="Top"/>
+        <Button x:Name="b_save" Content="Сохранить" HorizontalAlignment="Left" Margin="345,254,0,0" Width="80" Height="20" VerticalAlignment="Top" Click="b_save_Click"/>
+        <Button x:Name="b_del" Content="Удалить" Margin="430,254,0,0" HorizontalAlignment="Left" Width="60" Height="20" VerticalAlignment="Top" Click="b_del_Click"/>
+        <Button x:Name="b_menu" Content="МЕНЮ" HorizontalAlignment="Left" Margin="10,254,0,0" Width="60" FontWeight="Bold" Height="20" VerticalAlignment="Top" Click="b_menu_Click"/>
+        <Button x:Name="b_add" Content="Добавить" HorizontalAlignment="Left" Margin="260,254,0,0" Width="80" Height="20" VerticalAlignment="Top" Click="b_add_Click"/>
+    </Grid>
+</Window>
